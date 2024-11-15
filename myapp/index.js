@@ -152,3 +152,5 @@ app.get('/authors/:authorId/books/', async (request, response) => {
   const booksArray = await db.all(getAuthorBooksQuery)
   response.send(booksArray)
 })
+
+module.exports = app
